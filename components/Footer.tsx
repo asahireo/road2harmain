@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Facebook, Instagram, Music2, Youtube } from 'lucide-react';
 
 const footerLinks = {
