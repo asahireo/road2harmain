@@ -39,7 +39,7 @@ export function Footer() {
               <Link href="/" className="flex items-center gap-3">
                 <div className="relative h-10 w-10 overflow-hidden rounded-xl border border-[var(--line)] bg-[rgba(217,173,99,0.08)]">
                   <Image
-                    src="/logo.svg"
+                    src="/road2harmain/logo.svg"
                     alt="My Mega Holidays Logo"
                     fill
                     className="object-contain p-1.5"

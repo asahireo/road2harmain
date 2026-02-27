@@ -106,22 +106,22 @@ const testimonials = [
 
 const gallery = [
   {
-    src: '/images/masjid-nabawi-sunset-1.jpg',
+    src: '/road2harmain/images/masjid-nabawi-sunset-1.jpg',
     alt: 'Sunset clouds over Al-Masjid an-Nabawi.',
     title: 'Golden Horizon',
   },
   {
-    src: '/images/masjid-nabawi-sunset-2.jpg',
+    src: '/road2harmain/images/masjid-nabawi-sunset-2.jpg',
     alt: 'Pilgrims in the courtyard during evening light.',
     title: 'Courtyard Calm',
   },
   {
-    src: '/images/masjid-nabawi-sunset-3.jpg',
+    src: '/road2harmain/images/masjid-nabawi-sunset-3.jpg',
     alt: 'Minarets against a warm Madinah sky.',
     title: 'Evening Minarets',
   },
   {
-    src: '/images/masjid-nabawi-sunset-4.jpg',
+    src: '/road2harmain/images/masjid-nabawi-sunset-4.jpg',
     alt: 'Night sky transition around the mosque architecture.',
     title: 'Blue Hour Reverence',
   },
@@ -140,7 +140,7 @@ export default function Home() {
           <Link href="/" className="flex items-center gap-3">
             <div className="relative h-10 w-10 overflow-hidden rounded-xl border border-[rgba(242,202,136,0.3)] bg-[rgba(242,202,136,0.08)]">
               <Image
-                src="/logo.svg"
+                src="/road2harmain/logo.svg"
                 alt="My Mega Holidays Logo"
                 fill
                 className="object-contain p-1.5"
@@ -226,7 +226,7 @@ export default function Home() {
             <article className="panel reveal overflow-hidden rounded-[1.8rem] p-3" style={revealDelay(210)}>
               <div className="relative h-52 overflow-hidden rounded-2xl border border-white/10">
                 <Image
-                  src="/images/masjid-nabawi-sunset-2.jpg"
+                  src="/road2harmain/images/masjid-nabawi-sunset-2.jpg"
                   alt="Pilgrims in the Prophet's Mosque courtyard"
                   fill
                   sizes="(min-width: 1024px) 35vw, 100vw"
