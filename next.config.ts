@@ -1,6 +1,8 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  basePath: '/road2harmain',
+  assetPrefix: '/road2harmain',
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
