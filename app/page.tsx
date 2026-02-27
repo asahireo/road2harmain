@@ -140,7 +140,7 @@ export default function Home() {
           <Link href="/" className="flex items-center gap-3">
             <div className="relative h-10 w-10 overflow-hidden rounded-xl border border-[rgba(242,202,136,0.3)] bg-[rgba(242,202,136,0.08)]">
               <Image
-                src="/road2harmain/logo.svg"
+                src="/road2harmain/haraminlogo.svg"
                 alt="My Mega Holidays Logo"
                 fill
                 className="object-contain p-1.5"
