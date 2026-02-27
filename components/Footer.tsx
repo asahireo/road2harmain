@@ -36,8 +36,13 @@ export function Footer() {
           <div className="grid gap-10 lg:grid-cols-5">
             <div className="lg:col-span-2">
               <Link href="/" className="flex items-center gap-3">
-                <div className="grid h-10 w-10 place-content-center rounded-2xl border border-[var(--line)] bg-[rgba(217,173,99,0.14)]">
-                  <span className="font-semibold text-[0.92rem] text-[var(--brand-soft)]">MM</span>
+                <div className="relative h-10 w-10 overflow-hidden rounded-xl border border-[var(--line)] bg-[rgba(217,173,99,0.08)]">
+                  <Image
+                    src="/logo.svg"
+                    alt="My Mega Holidays Logo"
+                    fill
+                    className="object-contain p-1.5"
+                  />
                 </div>
                 <span className="text-xl font-semibold tracking-tight">My Mega Holidays</span>
               </Link>

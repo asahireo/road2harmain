@@ -138,9 +138,14 @@ export default function Home() {
       <section className="shell relative pb-10 pt-6 md:pb-12 md:pt-8 lg:min-h-[calc(100vh-1.5rem)]">
         <header className="panel reveal sticky top-3 z-50 flex items-center justify-between rounded-2xl px-4 py-2.5 md:px-6" style={revealDelay(40)}>
           <Link href="/" className="flex items-center gap-3">
-            <span className="grid h-10 w-10 place-content-center rounded-xl border border-[rgba(242,202,136,0.45)] bg-[rgba(242,202,136,0.18)] text-sm font-semibold text-[var(--brand-soft)]">
-              MM
-            </span>
+            <div className="relative h-10 w-10 overflow-hidden rounded-xl border border-[rgba(242,202,136,0.3)] bg-[rgba(242,202,136,0.08)]">
+              <Image
+                src="/logo.svg"
+                alt="My Mega Holidays Logo"
+                fill
+                className="object-contain p-1.5"
+              />
+            </div>
             <div>
               <p className="text-[0.95rem] font-semibold leading-none">My Mega Holidays</p>
               <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">

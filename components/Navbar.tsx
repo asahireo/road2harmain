@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
@@ -26,23 +27,22 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'border-b border-[var(--line)] bg-[rgba(6,10,21,0.86)] backdrop-blur-md'
-          : 'bg-transparent'
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${isScrolled
+        ? 'border-b border-[var(--line)] bg-[rgba(6,10,21,0.86)] backdrop-blur-md'
+        : 'bg-transparent'
+        }`}
     >
       <div className="shell flex h-[78px] items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <div className="grid h-10 w-10 place-content-center rounded-2xl border border-[var(--line)] bg-[rgba(217,173,99,0.14)]">
-            <span className="font-semibold text-[0.9rem] leading-none text-[var(--brand-soft)]">MM</span>
+          <div className="relative h-10 w-10 overflow-hidden rounded-xl border border-[var(--line)] bg-[rgba(217,173,99,0.08)]">
+            <Image
+              src="/logo.svg"
+              alt="My Mega Holidays Logo"
+              fill
+              className="object-contain p-1.5"
+            />
           </div>
-          <div>
-            <p className="text-[0.98rem] font-semibold leading-none tracking-wide">My Mega Holidays</p>
-            <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.16em] text-[var(--muted)]">
-              Pemudah Jalan ke Tanah Suci
-            </p>
-          </div>
+          <span className="text-xl font-semibold tracking-tight">My Mega Holidays</span>
         </Link>
 
         <div className="hidden items-center gap-7 md:flex">
